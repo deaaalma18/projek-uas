@@ -28,7 +28,7 @@ class JadwalDokterController extends Controller
     }
 
 
-    public function create()
+    public function create(): View
     {
         $dokter = Dokter::all();
         return view('jadwal_dokter.tambah', compact('dokter'));
